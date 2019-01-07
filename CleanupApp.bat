@@ -3,6 +3,7 @@ REM Batch file to remove all of the default sample content (the Styleguide and G
 FOR /D %%p IN (".\src\components\Styleguide*") DO RMDIR "%%p" /s /q
 FOR /D %%p IN (".\src\components\GraphQL*") DO RMDIR "%%p" /s /q
 
+DEL /q ".\src\components\Styleguide*"
 DEL /q ".\sitecore\definitions\components\Styleguide*"
 DEL /q ".\sitecore\definitions\components\GraphQL*"
 DEL /q ".\sitecore\definitions\templates\Styleguide*"
